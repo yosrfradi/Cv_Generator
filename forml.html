@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Generateur de cv </h1>
+    <form action="ajout.php" method="post">
+        Votre Photo : <input type="file" name="photo" id="photo" placeholder="veuillez inserer votre photo" >
+        </br>
+        </br>
+        Nom Complet : <input type="text" name="txtName" id="txtName" placeholder="votre nom complet" required>
+        </br>
+        </br>
+
+        Adresse : <input type="text" name="adresse" id="adresse" placeholder="votre adresse" required>
+        </br>
+        </br>
+
+        E mail : <input type="email" name="mail" id="mail" placeholder="fullname@gmail.com" required>
+        </br>
+        </br>
+
+        site: <input type="text" name="txtSite" id="txtSite" placeholder="LinkedIn ou Facebook" required>
+        </br>
+        </br>
+
+        Telephone : <input type="text" name="txtPhone" id="txtPhone" placeholder="Votre Numéro de Telephone" required>
+        </br>
+        </br>
+
+        Experience Profesionnelle: <textarea name="txtExperience" id="txtExperience" required></textarea>
+        </br>
+        </br>
+
+        Education: <textarea name="txtFormation" id="txtFormation" required></textarea>
+        </br>
+        </br>
+
+        Compétance :<textarea name="txtCompetance" id="txtCompetance" required></textarea>
+        <br>
+        <br>
+        Soft Skills :<textarea name="txtSkills" id="txtSkills" required></textarea>
+        
+        <button type="submit"  name="ajout" >Ajouter</button>
+    </form>
+</body>
+</html>

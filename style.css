@@ -1,0 +1,78 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(rgba(47, 46, 46, 0.75), rgba(0, 0, 0, 0.75)), url(background.jpg);
+    color: #a9adab;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #c0c6c4;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.75); /* Ajoute un flou au cadre */
+    background-color: rgba(255, 255, 255, 0.1); /* Couleur de fond semi-transparente */
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+textarea {
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+    border: 10px 10px solid;
+    border-color:#fff ;
+
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #797c79;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #c0c6c4;
+}
+
+input[type="file"] {
+    display: block; /* Afficher l'input file en tant que bloc */
+    margin: 0 auto; /* Centrer horizontalement */
+    width: 150px; /* Définir une largeur */
+    height: 150px; /* Définir une hauteur */
+    border-radius: 50%; /* Créer une apparence de cercle */
+    overflow: hidden; /* Cacher le contenu dépassant */
+    position: relative; /* Position relative pour placer l'icône au centre */
+}
+
+/* Styles pour l'icône d'insertion de photo */
+input[type="file"]::before {
+    content: '\1F4F7'; /* Unicode pour une icône de caméra (vous pouvez utiliser une autre icône si vous le souhaitez) */
+    font-size: 60px; /* Taille de la police de l'icône */
+    color: #ccc; /* Couleur de l'icône */
+    position: absolute; /* Position absolue pour placer l'icône au centre */
+    top: 50%; /* Déplacer l'icône à la moitié du conteneur */
+    left: 50%; /* Déplacer l'icône à la moitié du conteneur */
+    transform: translate(-50%, -50%); /* Déplacer l'icône de moitié de sa propre taille pour la centrer */
+}
